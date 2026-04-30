@@ -1,0 +1,22 @@
+id: skills
+title: Skills
+template: grid
+content:
+  heading: "Capabilities"
+  description: "Recognition patterns that compose this project's skill set."
+  items:
+    - name: "semantic-tree-anchor"
+      description: "See skills/semantic-tree-anchor.md"
+      href: "https://github.com"
+    - name: "vector-logic-partition"
+      description: "See skills/vector-logic-partition.md"
+      href: "https://github.com"
+    - name: "boundary-navigation"
+      description: "See skills/boundary-navigation.md"
+      href: "https://github.com"
+    - name: "drunk-transformer-correction"
+      description: "See skills/drunk-transformer-correction.md"
+      href: "https://github.com"
+    - name: "reasoning-engine-core"
+      description: "See skills/reasoning-engine-core.md"
+      href: "https://github.com"

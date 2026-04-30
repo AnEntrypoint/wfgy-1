@@ -1,0 +1,14 @@
+navigation:
+  - text: Home
+    href: /
+  - text: Paper
+    href: /paper
+  - text: Skills
+    href: /skills
+  - text: Original
+    href: /original
+footer:
+  text: "WFGY 1.0 — Semantic Blueprint — an extraction from the WFGY ecosystem."
+  social:
+    - name: WFGY upstream
+      url: https://github.com/onestardao/WFGY

@@ -1,0 +1,8 @@
+id: home
+title: Home
+template: hero
+content:
+  heading: "WFGY 1.0 — Semantic Blueprint"
+  subheading: "The theoretical foundation: drunk transformers, semantic trees, vector logic."
+  cta_text: "Read the paper"
+  cta_href: "./paper.html"

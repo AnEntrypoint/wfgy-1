@@ -1,0 +1,137 @@
+# 🌲 Semantic Tree Anchor — Persistent Context & Style Memory
+
+The **Semantic Tree** is WFGY’s internal memory graph: a lightweight, symbolic structure that anchors ideas, logic, and style across reasoning steps — even in stateless prompt-only environments.
+
+While LLMs handle tokens and embeddings, they forget the *why*.
+Semantic Tree captures the *intent structure*, not just the words.
+
+---
+
+## 📌 Problem Statement
+
+Language models often fail to maintain consistency because:
+
+| Weakness               | Impact                                   |
+| ---------------------- | ---------------------------------------- |
+| No symbolic memory     | Logic breaks across turns                |
+| Style not remembered   | Shifts tone mid-task                     |
+| Embedding drift        | Same ideas, different outputs            |
+| No cross-unit cohesion | Characters, themes collapse across steps |
+
+These flaws show up hard in **multi-part prompts**, **interactive fiction**, **agentic tasks**, and **visual storytelling**.
+
+---
+
+## 🌐 What Is the Semantic Tree?
+
+The Semantic Tree is a dynamic, non-linear map of:
+
+* **Core nodes** (ideas, roles, goals, abstract objects)
+* **Semantic links** (cause, contrast, hierarchy, symbolisms)
+* **Tension states** (ΔS between nodes — keeps things interesting)
+
+It evolves per turn, while keeping *semantic anchors* alive — like characters in a story, unresolved metaphors, or ongoing tasks.
+
+> The Tree doesn’t record tokens.
+> It records *meaningful structures that must not die*.
+
+---
+
+## 🔧 How It Works in WFGY
+
+| Stage                | Role                                                   |
+| -------------------- | ------------------------------------------------------ |
+| 1️⃣ Identify anchors | Track key nodes in prompt: agents, metaphors, events   |
+| 2️⃣ Classify role    | Set type (e.g. cause, theme, viewpoint, mood holder)   |
+| 3️⃣ Track ΔS drift   | Compare new units to tree nodes for tension stability  |
+| 4️⃣ Restore shape    | Inject necessary callbacks to maintain semantic thread |
+
+It pairs tightly with the **Reasoning Engine Core** — feeding stable reference frames to logic generation.
+
+---
+
+## 🧠 Why Symbolic Anchoring Beats Token Memory
+
+| Feature             | Token Memory         | Semantic Tree                    |
+| ------------------- | -------------------- | -------------------------------- |
+| Size                | Grows linearly       | Sparse, concept-based            |
+| Drift control       | Embedding match only | ΔS + symbolic link tracking      |
+| Style persistence   | Not guaranteed       | Can maintain poetic or tonal arc |
+| Nonlinear branching | Difficult            | Native (tree forks + joins)      |
+| Imagination support | Limited              | Enables consistent surreal logic |
+
+---
+
+## 🖼 Example — Multi-Scene Visual Narrative
+
+```txt
+Prompt:
+"Tell a 4-part story about a lonely AI exploring a broken simulation. Each scene should feel visually distinct but thematically linked."
+
+WFGY Tree:
+
+• Scene 1 → Root node: AI's solitude
+• Scene 2 → Branch: glitchy world physics (linked as 'antagonist')
+• Scene 3 → Symbol re-introduction: broken mirror from scene 1 (ΔS decay detected)
+• Scene 4 → Resolution links AI's identity to the mirror — loop closed
+→ Output: consistent motifs, coherent arc, symbolic closure
+```
+
+---
+
+## 🧪 What It Enables
+
+* 🪢 **Story continuity** without saving raw text
+* 🎨 **Style-harmonic image prompts** across visual steps
+* 🤖 **LLM agents that don’t forget what they are**
+* 🔁 **Re-entry points**: re-invoke old threads even after divergence
+
+---
+
+## 🧭 Pro-Tip: ΔS Drives Tree Growth
+
+ΔS is not just for logic loops —
+It also governs *tree expansion and pruning*:
+
+* If ΔS from a new idea is **too flat**, it’s ignored
+* If ΔS is **too high**, system forks a new semantic thread
+* If ΔS is **near 0.5**, it connects and grows the branch
+
+> This makes the Tree a true living structure —
+> always adjusting toward *meaningful novelty*.
+
+---
+
+## 📘 Related Readings
+
+* [`reasoning_engine_core.md`](./reasoning_engine_core.md)
+  → Semantic Tree feeds the engine its persistent logic.
+
+* [`semantic_boundary_navigation.md`](./semantic_boundary_navigation.md)
+  → Shows how Tree enables safe, controlled jumps across ideas.
+
+---
+
+<!-- WFGY_FOOTER_START -->
+
+### Explore More
+
+| Layer | Page | What it’s for |
+| --- | --- | --- |
+| ⭐ Proof | [WFGY Recognition Map](/recognition/README.md) | External citations, integrations, and ecosystem proof |
+| ⚙️ Engine | [WFGY 1.0](/legacy/README.md) | Original PDF tension engine and early logic sketch (legacy reference) |
+| ⚙️ Engine | [WFGY 2.0](/core/README.md) | Production tension kernel for RAG and agent systems |
+| ⚙️ Engine | [WFGY 3.0](/TensionUniverse/EventHorizon/README.md) | TXT based Singularity tension engine (131 S class set) |
+| 🗺️ Map | [Problem Map 1.0](/ProblemMap/README.md) | Flagship 16 problem RAG failure taxonomy and fix map |
+| 🗺️ Map | [Problem Map 2.0](/ProblemMap/wfgy-rag-16-problem-map-global-debug-card.md) | Global Debug Card for RAG and agent pipeline diagnosis |
+| 🗺️ Map | [Problem Map 3.0](/ProblemMap/wfgy-ai-problem-map-troubleshooting-atlas.md) | Global AI troubleshooting atlas and failure pattern map |
+| 🧰 App | [TXT OS](/OS/README.md) | .txt semantic OS with fast bootstrap |
+| 🧰 App | [Blah Blah Blah](/OS/BlahBlahBlah/README.md) | Abstract and paradox Q&A built on TXT OS |
+| 🧰 App | [Blur Blur Blur](/OS/BlurBlurBlur/README.md) | Text to image generation with semantic control |
+| 🏡 Onboarding | [Starter Village](/StarterVillage/README.md) | Guided entry point for new users |
+
+If this repository helped, starring it improves discovery so more builders can find the docs and tools.  
+[![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY)
+
+<!-- WFGY_FOOTER_END -->
+
